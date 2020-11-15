@@ -25,4 +25,4 @@ $date=Get-Date -Format "yyyy-MM-dd HH-mm-ss"
 
 New-Item -Path $basePath -Name $date -ItemType "directory"
 
-Export-Config -Camera 10.12.0.11 -Path $basePath + $date + "/camera1.bin"
+Export-Config -Camera 10.12.0.11 -Path ($basePath + $date + "/camera1.bin")
