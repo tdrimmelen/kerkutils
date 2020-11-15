@@ -1,4 +1,4 @@
-$basePath="C:\Users\Test\Dropbox\PGS Stream team\Configuratie\camera presets"
+$basePath="C:\Users\Test\Dropbox\PGS Stream team\Configuratie\camera presets\"
 
 function Export-Config {
     param (
@@ -7,7 +7,7 @@ function Export-Config {
 
     )
     
-    curl.exe "http://${camera}/presetfilesave.cgi" `
+    curl.exe "http://${Camera}/presetfilesave.cgi" `
     -X "POST" `
     -H "Connection: keep-alive" `
     -H "Content-Length: 0" `
@@ -17,11 +17,11 @@ function Export-Config {
     -H "Accept-Language: nl-NL,nl;q=0.9,en-US;q=0.8,en;q=0.7" `
     -H "Cookie: userName=admin; passWord=9999; authority=0" `
     --insecure `
-    --output $path
+    --output ${Path}
 
 }
 
-$date=Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+$date=Get-Date -Format "yyyy-MM-dd HH-mm-ss"
 
 New-Item -Path $basePath -Name $date -ItemType "directory"
 
