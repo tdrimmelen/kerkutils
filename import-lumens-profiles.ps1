@@ -1,6 +1,6 @@
 [System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms")
 
-$basePath="C:\Users\Test\Dropbox\PGS Stream team\Configuratie\camera presets\golden preset normale dienst"
+$basePath="C:\Users\pgska\Dropbox\PGS Stream team\Configuratie\camera presets\golden preset normale dienst"
 
 function Import-Config {
     param (

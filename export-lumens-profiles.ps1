@@ -1,4 +1,4 @@
-$basePath="C:\Users\Test\Dropbox\PGS Stream team\Configuratie\camera presets\"
+$basePath="C:\Users\pgska\Dropbox\PGS Stream team\Configuratie\camera presets\"
 
 function Export-Config {
     param (
